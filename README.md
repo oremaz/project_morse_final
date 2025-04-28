@@ -1,6 +1,6 @@
 # Projet Morse
 
-Ce projet consiste à encoder un fichier texte en Morse (format WAV), puis à décoder un fichier Morse (WAV) encodé avec la méthode précédente en format texte.
+Ce projet consiste à encoder un fichier txt en Morse (format WAV), puis à décoder en format txt un fichier Morse (WAV) encodé avec la méthode précédente.
 
 ## Points à souligner
 
