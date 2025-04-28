@@ -13,21 +13,21 @@
 #endif
 
 struct WavHeader {
+    char riffId[4] = {'R', 'I', 'F', 'F'};
     uint32_t riffSize;
-    uint32_t fmtSize = 16;
-    uint32_t sampleRate = 44100;
-    uint32_t byteRate = 44100 * 2;
-    uint32_t dataSize;
+    char waveId[4] = {'W', 'A', 'V', 'E'};
 
+    char fmtId[4] = {'f', 'm', 't', ' '};
+    uint32_t fmtSize = 16;
     uint16_t audioFormat = 1;
     uint16_t numChannels = 1;
-    uint16_t blockAlign = 2;
+    uint32_t sampleRate = 44100;
+    uint32_t byteRate;
+    uint16_t blockAlign;
     uint16_t bitsPerSample = 16;
 
-    char riffId[4] = {'R', 'I', 'F', 'F'};
-    char waveId[4] = {'W', 'A', 'V', 'E'};
-    char fmtId[4] = {'f', 'm', 't', ' '};
     char dataId[4] = {'d', 'a', 't', 'a'};
+    uint32_t dataSize;
 };
 
 class MorseException : public std::exception {
@@ -116,7 +116,7 @@ public:
     }
 };
 
-template<typename SampleType = int16_t>
+template<typename SampleType = int8_t>
 class WavProcessor {
     static constexpr SampleType MAX_AMP = std::numeric_limits<SampleType>::max();
     static constexpr double DOT_DURATION = 0.1;
