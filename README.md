@@ -248,8 +248,3 @@ This project is open source. Please refer to the repository for specific licensi
 **Version**: 1.0  
 
 For issues, questions, or contributions, please visit the [GitHub repository](https://github.com/oremaz/project_morse_final).
- # # #   S a m p l e   T y p e   C o n f i g u r a t i o n 
- T h e   a p p l i c a t i o n   u s e s   C + +   t e m p l a t e s   t o   s u p p o r t   d i f f e r e n t   s a m p l e   t y p e s : 
- 
- ` ` ` c p p 
- / /   D e f 
