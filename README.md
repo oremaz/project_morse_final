@@ -23,7 +23,6 @@ A comprehensive C++ application that converts text files to Morse code audio (WA
 - [Morse Code Implementation](#morse-code-implementation)
 - [Examples](#examples)
 - [Limitations](#limitations)
-- [Contributing](#contributing)
 - [License](#license)
 
 ## Technical Specifications
@@ -51,28 +50,6 @@ A comprehensive C++ application that converts text files to Morse code audio (WA
 ## Installation & Compilation
 
 ### Quick Start
-```bash
-# Clone the repository
-git clone https://github.com/oremaz/project_morse_final.git
-cd project_morse_final
-
-# Compile with default settings (16-bit samples)
-g++ -std=c++11 -Wall -O2 morse3.cpp -o morse3
-
-# For debug version
-g++ -std=c++11 -Wall -g morse3.cpp -o morse3_debug
-```
-
-### Advanced Compilation Options
-```bash
-# For maximum optimization
-g++ -std=c++11 -Wall -O3 -DNDEBUG morse3.cpp -o morse3
-
-# With additional warnings
-g++ -std=c++11 -Wall -Wextra -Wpedantic morse3.cpp -o morse3
-
-# For different sample types, modify the SampleType template in source code before compilation
-```
 
 ## Usage
 
@@ -199,26 +176,6 @@ SUCCESS
 4. **Mono Audio**: Single channel audio only
 5. **Fixed Parameters**: Audio frequency (800Hz) and timing parameters are hard-coded
 
-## Contributing
-
-Contributions are welcome! Here are some areas for potential improvement:
-
-### Potential Enhancements
-- [ ] Runtime sample type selection (avoiding recompilation)
-- [ ] Support for additional audio formats
-- [ ] Configurable audio parameters (frequency, timing)
-- [ ] GUI interface
-- [ ] Extended character set support
-- [ ] Stereo audio support
-- [ ] Batch processing capabilities
-- [ ] Real-time audio processing
-
-### Development Guidelines
-1. Follow existing code style and naming conventions
-2. Add appropriate error handling for new features  
-3. Include test cases for new functionality
-4. Update documentation for any API changes
-5. Ensure cross-platform compatibility
 
 ## Architecture
 
@@ -236,15 +193,3 @@ The project follows object-oriented design principles with clear separation of c
 - **Template Optimization**: Compile-time template specialization for different sample types
 - **File I/O**: Buffered file operations for improved performance
 - **Audio Processing**: Efficient sine wave generation using mathematical algorithms
-
-## License
-
-This project is open source. Please refer to the repository for specific licensing terms.
-
----
-
-**Author**: oremaz  
-**Last Updated**: June 2025  
-**Version**: 1.0  
-
-For issues, questions, or contributions, please visit the [GitHub repository](https://github.com/oremaz/project_morse_final).
