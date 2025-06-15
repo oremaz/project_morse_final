@@ -23,7 +23,6 @@ A comprehensive C++ application that converts text files to Morse code audio (WA
 - [Morse Code Implementation](#morse-code-implementation)
 - [Examples](#examples)
 - [Limitations](#limitations)
-- [License](#license)
 
 ## Technical Specifications
 
